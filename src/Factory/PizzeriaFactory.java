@@ -1,16 +1,16 @@
-package Decorator;
+package Factory;
 
 class PizzeriaBerlin extends Pizzeria{
     @Override 
     protected Zubereiten createPizza(String gewünschtePizza) { 
     	Zubereiten pizza = null; 
-        if (gewünschtePizza.equals("SalamiBerlin")) { 
+        if (gewünschtePizza.equals("Salami")) { 
         	pizza = new SalamiBerlin(); 
         } 
-        else if (gewünschtePizza.equals("HawaiiBerlin")) { 
+        else if (gewünschtePizza.equals("Hawaii")) { 
         	pizza = new HawaiiBerlin(); 
         } 
-        else if (gewünschtePizza.equals("CalzoneBerlin")) { 
+        else if (gewünschtePizza.equals("Calzone")) { 
         	pizza = new CalzoneBerlin(); 
         } 
         else { 
@@ -24,13 +24,13 @@ class PizzeriaHamburg extends Pizzeria{
     @Override 
     protected Zubereiten createPizza(String gewünschtePizza) { 
     	Zubereiten pizza = null; 
-        if (gewünschtePizza.equals("SalamiHamburg")) { 
+        if (gewünschtePizza.equals("Salami")) { 
         	pizza = new SalamiHamburg(); 
         } 
-        else if (gewünschtePizza.equals("HawaiiHamburg")) { 
+        else if (gewünschtePizza.equals("Hawaii")) { 
         	pizza = new HawaiiHamburg(); 
         } 
-        else if (gewünschtePizza.equals("CalzoneHamburg")) { 
+        else if (gewünschtePizza.equals("Calzone")) { 
         	pizza = new CalzoneHamburg(); 
         } 
         else { 
@@ -44,13 +44,13 @@ class PizzeriaRostock extends Pizzeria{
     @Override 
     protected Zubereiten createPizza(String gewünschtePizza) { 
     	Zubereiten pizza = null; 
-        if (gewünschtePizza.equals("SalamiHamburg")) { 
+        if (gewünschtePizza.equals("Salami")) { 
         	pizza = new SalamiHamburg(); 
         } 
-        else if (gewünschtePizza.equals("HawaiiHamburg")) { 
+        else if (gewünschtePizza.equals("Hawaii")) { 
         	pizza = new HawaiiHamburg(); 
         } 
-        else if (gewünschtePizza.equals("CalzoneHamburg")) { 
+        else if (gewünschtePizza.equals("Calzone")) { 
         	pizza = new CalzoneHamburg(); 
         } 
         else { 

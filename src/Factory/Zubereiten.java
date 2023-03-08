@@ -1,4 +1,4 @@
-package Decorator;
+package Factory;
 
 public abstract class Zubereiten 
 {
