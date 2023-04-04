@@ -1,4 +1,4 @@
-package Observer;
+package Observer_Pattern;
 
 public class ObservableSensor extends Observable
 {

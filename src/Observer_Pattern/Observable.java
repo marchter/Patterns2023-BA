@@ -1,4 +1,4 @@
-package Observer;
+package Observer_Pattern;
 
 import java.util.ArrayList;
 
@@ -20,4 +20,6 @@ public abstract class Observable
             observer.update(state); 
         } 
     } 
+    
+    //getter für pull variante notwendig
 }
