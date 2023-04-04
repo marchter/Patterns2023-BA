@@ -9,6 +9,9 @@ public class Client
 		
 		((DruckerProxy) d).switchTo("C");
 		d.drucken("hallo2");
+		
+		((DruckerProxy) d).switchTo("SW");
+		d.drucken("hallo3");
 	}
 
 		
