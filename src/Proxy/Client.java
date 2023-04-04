@@ -7,7 +7,7 @@ public class Client
 		Drucker d = new DruckerProxy("SW");
 		d.drucken("hallo1");
 		
-		d.switchTo("C");
+		((DruckerProxy) d).switchTo("C");
 		d.drucken("hallo2");
 	}
 
