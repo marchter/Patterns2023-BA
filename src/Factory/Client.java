@@ -1,16 +1,16 @@
 package Factory;
 
-public class Pizzerant 
+public class Client 
 {
 
 	public static void main(String[] args) {
 		Pizzeria pizzeriaBerlin = new PizzeriaBerlin();
-		Zubereiten salamiBerlin = pizzeriaBerlin.createPizza("Salami");
+		Pizza salamiBerlin = pizzeriaBerlin.createPizza("Salami");
 		salamiBerlin.zubereiten();
 		
 		
 		Pizzeria pizzeriaHamburg = new PizzeriaHamburg();
-		Zubereiten salamiHamburg = pizzeriaHamburg.createPizza("Salami");
+		Pizza salamiHamburg = pizzeriaHamburg.createPizza("Salami");
 		salamiHamburg.zubereiten();
 	}
 	

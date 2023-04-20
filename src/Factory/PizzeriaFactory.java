@@ -2,8 +2,8 @@ package Factory;
 
 class PizzeriaBerlin extends Pizzeria{
     @Override 
-    protected Zubereiten createPizza(String gewünschtePizza) { 
-    	Zubereiten pizza = null; 
+    protected Pizza createPizza(String gewünschtePizza) { 
+    	Pizza pizza = null; 
         if (gewünschtePizza.equals("Salami")) { 
         	pizza = new SalamiBerlin(); 
         } 
@@ -22,8 +22,8 @@ class PizzeriaBerlin extends Pizzeria{
 
 class PizzeriaHamburg extends Pizzeria{
     @Override 
-    protected Zubereiten createPizza(String gewünschtePizza) { 
-    	Zubereiten pizza = null; 
+    protected Pizza createPizza(String gewünschtePizza) { 
+    	Pizza pizza = null; 
         if (gewünschtePizza.equals("Salami")) { 
         	pizza = new SalamiHamburg(); 
         } 
@@ -42,8 +42,8 @@ class PizzeriaHamburg extends Pizzeria{
 
 class PizzeriaRostock extends Pizzeria{
     @Override 
-    protected Zubereiten createPizza(String gewünschtePizza) { 
-    	Zubereiten pizza = null; 
+    protected Pizza createPizza(String gewünschtePizza) { 
+    	Pizza pizza = null; 
         if (gewünschtePizza.equals("Salami")) { 
         	pizza = new SalamiHamburg(); 
         } 

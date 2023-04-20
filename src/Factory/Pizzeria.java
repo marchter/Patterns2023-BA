@@ -2,8 +2,8 @@ package Factory;
 
 public abstract class Pizzeria {
 		
-		public Zubereiten zubereiten(String gewünschtePizza) {
-			Zubereiten pizza = createPizza(gewünschtePizza);
+		public Pizza zubereiten(String gewünschtePizza) {
+			Pizza pizza = createPizza(gewünschtePizza);
 			
 			pizza.backen();
 			pizza.schneiden();
@@ -12,6 +12,6 @@ public abstract class Pizzeria {
 			return pizza;
 		}
 		
-	    protected abstract Zubereiten createPizza(String gewünschtePizza);
+	    protected abstract Pizza createPizza(String gewünschtePizza);
 
 }
