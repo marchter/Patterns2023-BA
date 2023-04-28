@@ -24,6 +24,7 @@ public class Client
 		
 		CommandInterface command4 = new Spielzug(FieldFactory.createField("X"), new Position(0, 2), spielfeld);
 		commandRecorder.ausführen(command4);
+		control.printSpielfeld();
 
 		
 		System.out.println("Undo:");
