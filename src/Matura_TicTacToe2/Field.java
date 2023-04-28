@@ -1,21 +1,6 @@
 package Matura_TicTacToe2;
 
-public class Field 
+abstract class Field 
 {
-	private String type;
-	
-	
-	public Field(String type) {
-		this.type = type;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-	
-	
+		public abstract String getType();
 }

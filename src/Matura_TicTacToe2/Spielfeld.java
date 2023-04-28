@@ -17,9 +17,9 @@ public class Spielfeld extends Observerable
 	
 	
 	private Field[][] matrix = {
-		    {new Field("_"), new Field("_"), new Field("_")},
-		    {new Field("_"), new Field("_"), new Field("_")},
-		    {new Field("_"), new Field("_"), new Field("_")}
+		    {FieldFactory.createField("_"), FieldFactory.createField("_"), FieldFactory.createField("_")},
+		    {FieldFactory.createField("_"), FieldFactory.createField("_"), FieldFactory.createField("_")},
+		    {FieldFactory.createField("_"), FieldFactory.createField("_"), FieldFactory.createField("_")}
 		};
 	
 	public void Zug(Position p, Field field)

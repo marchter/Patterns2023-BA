@@ -24,7 +24,7 @@ public class Spielzug implements CommandInterface {
 	@Override
 	public void undo()
 	{
-		spielfeld.Zug(this.pos, new Field("_"));
+		spielfeld.Zug(this.pos, FieldFactory.createField("_"));
 	}
 
 	@Override

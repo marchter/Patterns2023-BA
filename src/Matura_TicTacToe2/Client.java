@@ -9,20 +9,20 @@ public class Client
 		Control control = new Control(spielfeld, new View());
 		CommandRecorder commandRecorder = new CommandRecorder();
 
-		CommandInterface command = new Spielzug(new Field("X"), new Position(0,0), spielfeld);
+		CommandInterface command = new Spielzug(FieldFactory.createField("X"), new Position(0,0), spielfeld);
 		
 		control.printSpielfeld();
 		
 		commandRecorder.ausführen(command);
 		control.printSpielfeld();
 		
-		CommandInterface command2 = new Spielzug(new Field("O"), new Position(1, 1), spielfeld);
+		CommandInterface command2 = new Spielzug(FieldFactory.createField("O"), new Position(1, 1), spielfeld);
 		commandRecorder.ausführen(command2);
 		
-		CommandInterface command3 = new Spielzug(new Field("X"), new Position(0, 1), spielfeld);
+		CommandInterface command3 = new Spielzug(FieldFactory.createField("X"), new Position(0, 1), spielfeld);
 		commandRecorder.ausführen(command3);
 		
-		CommandInterface command4 = new Spielzug(new Field("X"), new Position(0, 2), spielfeld);
+		CommandInterface command4 = new Spielzug(FieldFactory.createField("X"), new Position(0, 2), spielfeld);
 		commandRecorder.ausführen(command4);
 
 		
